@@ -33,8 +33,8 @@ Animation,Foreground,Centre,"sb\noise\n.jpg",320,240,5,123,LoopForever
  P,0,49497,,A
  F,2,49497,314239,1
 Sprite,Foreground,Centre,"sb\glitch.jpg",340,240
- F,0,0,,1,0
  S,0,0,314239,0.55
+ F,0,0,,1,0
  F,28,49497,49997,1,0
  F,28,49997,50497,1,0
  F,28,64652,65152,1,0
