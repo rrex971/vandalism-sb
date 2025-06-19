@@ -61,6 +61,7 @@ Sprite,Foreground,Centre,"sb\glitch.jpg",340,240
  F,28,285049,285549,1,0
  F,28,294445,294945,1,0
  F,28,294945,295445,1,0
+
 Sprite,Foreground,Centre,"sb\band.png",58,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,9.3
@@ -56264,6 +56265,7 @@ Sprite,Foreground,Centre,"sb\band.png",358,300
  V,0,314240,314273,2,15.5
  V,0,314273,314306,2,15.5,2,14
  V,0,314306,314339,2,14,2,15.5
+ 
 Sprite,Foreground,Centre,"sb\band.png",408,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,15.5
@@ -88380,6 +88382,8 @@ Sprite,Foreground,Centre,"sb\band.png",558,300
  V,0,314240,314273,2,10.2,2,6.3
  V,0,314273,314306,2,6.3,2,0.5
  V,0,314306,314339,2,0.5,2,0.05
+
+
 Sprite,Foreground,Centre,"sb\background.png",320,240
  L,49497,40
   M,0,0,2500,322,242,318,242
