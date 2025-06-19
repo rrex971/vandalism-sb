@@ -32,7 +32,7 @@ Animation,Foreground,Centre,"sb\noise\n.jpg",320,240,5,123,LoopForever
  C,0,39600,,0,255,255
  P,0,49497,,A
  F,2,49497,314239,1
-Sprite,Foreground,Centre,"sb\glitch.png",320,240
+Sprite,Foreground,Centre,"sb\glitch.jpg",340,240
  F,0,0,,1,0
  S,0,0,314239,0.55
  F,28,49497,49997,1,0
@@ -61,7 +61,7 @@ Sprite,Foreground,Centre,"sb\glitch.png",320,240
  F,28,285049,285549,1,0
  F,28,294445,294945,1,0
  F,28,294945,295445,1,0
-Sprite,Foreground,Centre,"sb\band.png",50,300
+Sprite,Foreground,Centre,"sb\band.png",58,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,9.3
  V,0,49535,49568,2,9.3
@@ -8090,7 +8090,7 @@ Sprite,Foreground,Centre,"sb\band.png",50,300
  V,0,314240,314273,2,9.3
  V,0,314273,314306,2,9.3
  V,0,314306,314339,2,9.3
-Sprite,Foreground,Centre,"sb\band.png",100,300
+Sprite,Foreground,Centre,"sb\band.png",108,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,9.06,2,9.3
  V,0,49535,49568,2,9.3
@@ -16119,7 +16119,7 @@ Sprite,Foreground,Centre,"sb\band.png",100,300
  V,0,314240,314273,2,9.3
  V,0,314273,314306,2,9.3
  V,0,314306,314339,2,9.3
-Sprite,Foreground,Centre,"sb\band.png",150,300
+Sprite,Foreground,Centre,"sb\band.png",158,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,11.45,2,15.5
  V,0,49535,49568,2,15.5,2,11.4
@@ -24148,7 +24148,7 @@ Sprite,Foreground,Centre,"sb\band.png",150,300
  V,0,314240,314273,2,15.5
  V,0,314273,314306,2,15.5
  V,0,314306,314339,2,15.5,2,10.65
-Sprite,Foreground,Centre,"sb\band.png",200,300
+Sprite,Foreground,Centre,"sb\band.png",208,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,11.05,2,11.85
  V,0,49535,49568,2,11.85,2,7.4
@@ -32177,7 +32177,7 @@ Sprite,Foreground,Centre,"sb\band.png",200,300
  V,0,314240,314273,2,15.5,2,10.35
  V,0,314273,314306,2,10.35,2,14.9
  V,0,314306,314339,2,14.9,2,15.5
-Sprite,Foreground,Centre,"sb\band.png",250,300
+Sprite,Foreground,Centre,"sb\band.png",258,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,10.6,2,14.05
  V,0,49535,49568,2,14.05,2,8.9
@@ -40206,7 +40206,7 @@ Sprite,Foreground,Centre,"sb\band.png",250,300
  V,0,314240,314273,2,15.5,2,14.85
  V,0,314273,314306,2,14.85,2,11.55
  V,0,314306,314339,2,11.55,2,11.95
-Sprite,Foreground,Centre,"sb\band.png",300,300
+Sprite,Foreground,Centre,"sb\band.png",308,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,15.4,2,15.1
  V,0,49535,49568,2,15.1,2,15.5
@@ -48235,7 +48235,7 @@ Sprite,Foreground,Centre,"sb\band.png",300,300
  V,0,314240,314273,2,15,2,15.5
  V,0,314273,314306,2,15.5,2,14.85
  V,0,314306,314339,2,14.85,2,13.15
-Sprite,Foreground,Centre,"sb\band.png",350,300
+Sprite,Foreground,Centre,"sb\band.png",358,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,15.5
  V,0,49535,49568,2,15.5
@@ -56264,7 +56264,7 @@ Sprite,Foreground,Centre,"sb\band.png",350,300
  V,0,314240,314273,2,15.5
  V,0,314273,314306,2,15.5,2,14
  V,0,314306,314339,2,14,2,15.5
-Sprite,Foreground,Centre,"sb\band.png",400,300
+Sprite,Foreground,Centre,"sb\band.png",408,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,15.5
  V,0,49535,49568,2,15.5,2,15.35
@@ -64293,7 +64293,7 @@ Sprite,Foreground,Centre,"sb\band.png",400,300
  V,0,314240,314273,2,15.5
  V,0,314273,314306,2,15.5
  V,0,314306,314339,2,15.5,2,11.35
-Sprite,Foreground,Centre,"sb\band.png",450,300
+Sprite,Foreground,Centre,"sb\band.png",458,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,15.5,2,12.5
  V,0,49535,49568,2,12.5,2,15.5
@@ -72322,7 +72322,7 @@ Sprite,Foreground,Centre,"sb\band.png",450,300
  V,0,314240,314273,2,15.5
  V,0,314273,314306,2,15.5,2,10.9
  V,0,314306,314339,2,10.9,2,10.65
-Sprite,Foreground,Centre,"sb\band.png",500,300
+Sprite,Foreground,Centre,"sb\band.png",508,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,15.5,2,12.2
  V,0,49535,49568,2,12.2,2,15.5
@@ -80351,7 +80351,7 @@ Sprite,Foreground,Centre,"sb\band.png",500,300
  V,0,314240,314273,2,15.5,2,13.35
  V,0,314273,314306,2,13.35,2,8.6
  V,0,314306,314339,2,8.6,2,9.55
-Sprite,Foreground,Centre,"sb\band.png",550,300
+Sprite,Foreground,Centre,"sb\band.png",558,300
  F,49497,49502,0,0.8
  V,0,49502,49535,2,6.85,2,8
  V,0,49535,49568,2,8,2,13.25
@@ -88390,7 +88390,7 @@ Sprite,Foreground,Centre,"sb\background.png",320,240
   R,1,5000,7500,-0.01,0.01
   M,0,7500,10000,318,238,322,242
   R,1,7500,10000,0.01,0
- S,0,19806,,0.47
+ S,0,19806,,0.5
  F,2,19806,25806,0,0.6
  F,0,39600,,0.8
  M,0,49397,49497,320,240,322,242
@@ -88431,12 +88431,12 @@ Sprite,Foreground,Centre,"sb\wronk.png",320,240
  S,0,91659,,0.2
  M,0,91659,110116,320,426
  F,28,109486,110116,1,0
-Animation,Foreground,Centre,"sb\g\g1.jpg",320,240,5,123,LoopForever
+Animation,Foreground,Centre,"sb\g\g.jpg",320,240,15,100,LoopForever
  M,0,15,10095,320,240
  S,0,10095,19729,0.45
  F,0,19729,,0.35
  F,1,19806,21806,0.35,0
-Sprite,Foreground,Centre,"sb\sil-blur.png",320,240
+Sprite,Foreground,Centre,"sb\sil-blur.jpg",320,240
  F,0,9909,,0.2
  S,0,9909,,0.5
  C,0,9909,,225,0,0
@@ -88449,14 +88449,16 @@ Sprite,Foreground,Centre,"sb\mcred\hscred.png",320,240
  S,1,9909,,0.25
  MX,0,9909,12402,175,150
  MY,0,9909,12402,313
-Sprite,Foreground,Centre,"sb\sil.png",320,240
+Sprite,Foreground,Centre,"sb\sil.jpg",320,240
  S,0,14858,,0.5
  C,0,14858,,0,0,255
+ P,0,14858,,A
  F,0,14858,17000,0,0.2
  M,1,14858,17332,80,225,80,215
-Sprite,Foreground,Centre,"sb\sil-blur.png",320,240
+Sprite,Foreground,Centre,"sb\sil-blur.jpg",320,240
  S,0,14858,,0.5
  C,0,14858,,0,0,255
+ P,0,14858,,A
  F,0,14858,17000,0.2,0
  M,1,14858,17332,80,225,80,215
 Sprite,Foreground,Centre,"sb\mcred\artcred.png",320,240
@@ -88678,8 +88680,12 @@ Sprite,Foreground,Centre,"sb\pixel.png",320,240
  C,0,294445,294745,0,0,255
  F,0,314239,314539,1,0
  C,0,314239,314539,255,0,0
-Sprite,Foreground,Centre,"sb\girl.png",320,240
- M,0,272865,,320,255.7989
- S,0,272865,,0.4441143
+Animation,Foreground,Centre,"sb\q\silence.jpg",320,240,2,8,LoopForever
+ F,0,12403,,0.6
+ S,0,12403,14851,0.2978285
+Animation,Foreground,Centre,"sb\q\sound.jpg",320,240,2,8,LoopForever
+ F,0,17333,,0.6
+ S,0,17333,,0.2978285
+ F,0,19711,21662,0.6,0
 //Storyboard Layer 4 (Overlay)
 //Storyboard Sound Samples
