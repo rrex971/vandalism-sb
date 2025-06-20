@@ -63,9 +63,11 @@ if __name__ == "__main__":
     NUM_EQUALIZER_BANDS = 11
     VISUALIZER_LEVELS = 16
     BASE_Y=300 #400
-    SCALE_FACTOR = 1.1  
+    SCALE_FACTOR = 1.1
     CONTRAST_EXPONENT = 3.0
     BAND_TYPE = 'linear'
+    WIDTH = 2
+    transition = False
 
     # --- RUN ANALYSIS ---
     eq_data = analyze_audio_for_eq(
@@ -91,9 +93,17 @@ if __name__ == "__main__":
                 continue
             fulldata[j].append([i["timestamp_ms"], i["bands"][j]])
     for i in range(len(fulldata)):
+        transition = False
+        WIDTH=2
+        SCALE_FACTOR=1.1
         f.write(f'''// Band {i}\nSprite,Foreground,Centre,"sb\\band.png",{8+50*(i+1)},{BASE_Y}\n F,49497,{fulldata[0][0][0]},0,0.5\n''')
         if i < 2:
             SCALE_FACTOR = 0.5
         for j in range(len(fulldata[i])-1):
-            f.write(f''' V,0,{fulldata[i][j][0]},{fulldata[i][j][0]+math.ceil(ANALYSIS_INTERVAL_MS)},2,{fulldata[i][j][1]*SCALE_FACTOR},2,{fulldata[i][j+1][1]*SCALE_FACTOR}\n''')
-                    # MY,0,{fulldata[i][j][0]},{fulldata[i][j][0]+math.ceil(ANALYSIS_INTERVAL_MS)},{BASE_Y+(6*fulldata[i][j][1]*SCALE_FACTOR)},{BASE_Y+(6*fulldata[i][j+1][1]*SCALE_FACTOR)}\n''')
+            if fulldata[i][j][0] >= 274652 and not transition:
+                transition = True
+                WIDTH=2.5
+                f.write(f''' M,10,{fulldata[i][j][0]},{fulldata[i][j][0]+500},{8+50*(i+1)},{BASE_Y},{(i*85.4)-107},480\n F,10,{fulldata[i][j][0]},{fulldata[i][j][0]+1000},0.5,1\n''')
+            if fulldata[i][j][0] <= 314239:
+                f.write(f''' V,0,{fulldata[i][j][0]},{fulldata[i][j][0]+math.ceil(ANALYSIS_INTERVAL_MS)},{WIDTH},{fulldata[i][j][1]*SCALE_FACTOR},{WIDTH},{fulldata[i][j+1][1]*SCALE_FACTOR}\n''')
+            #if transition: f.write(f'''MY,0,{fulldata[i][j][0]},{fulldata[i][j][0]+math.ceil(ANALYSIS_INTERVAL_MS)},{BASE_Y+(6*fulldata[i][j][1]*SCALE_FACTOR)},{BASE_Y+(6*fulldata[i][j+1][1]*SCALE_FACTOR)}\n''')
