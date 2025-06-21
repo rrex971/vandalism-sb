@@ -96,14 +96,27 @@ if __name__ == "__main__":
         transition = False
         WIDTH=2
         SCALE_FACTOR=1.1
+        done = False
         f.write(f'''// Band {i}\nSprite,Foreground,Centre,"sb\\band.png",{8+50*(i+1)},{BASE_Y}\n F,49497,{fulldata[0][0][0]},0,0.5\n''')
+        f.write(f''' L,49497,22
+  M,0,0,2500,{8+50*(i+1)+2},{BASE_Y+2},{8+50*(i+1)-2},{BASE_Y+2}
+  R,1,0,2500,0,0.01
+  M,0,2500,5000,{8+50*(i+1)-2},{BASE_Y+2},{8+50*(i+1)+2},{BASE_Y-2}
+  R,1,2500,5000,0.01,-0.01
+  M,0,5000,7500,{8+50*(i+1)+2},{BASE_Y-2},{8+50*(i+1)-2},{BASE_Y-2}
+  R,1,5000,7500,-0.01,0.01
+  M,0,7500,10000,{8+50*(i+1)-2},{BASE_Y-2},{8+50*(i+1)+2},{BASE_Y+2}
+  R,1,7500,10000,0.01,0\n''')
         if i < 2:
             SCALE_FACTOR = 0.5
         for j in range(len(fulldata[i])-1):
             if fulldata[i][j][0] >= 274652 and not transition:
                 transition = True
                 WIDTH=2.5
-                f.write(f''' M,10,{fulldata[i][j][0]},{fulldata[i][j][0]+500},{8+50*(i+1)},{BASE_Y},{(i*85.4)-107},480\n F,10,{fulldata[i][j][0]},{fulldata[i][j][0]+1000},0.5,1\n''')
-            if fulldata[i][j][0] <= 314239:
+                if i not in [4,5,6,7]:
+                    f.write(f''' M,10,{fulldata[i][j][0]},{fulldata[i][j][0]+1},{8+50*(i+1)},{BASE_Y},{(i*85.4)-107},480\n F,10,{fulldata[i][j][0]},{fulldata[i][j][0]+1000},0.5,1\n''')
+                else:
+                    done=True
+            if fulldata[i][j][0] <= 314239 and not done:
                 f.write(f''' V,0,{fulldata[i][j][0]},{fulldata[i][j][0]+math.ceil(ANALYSIS_INTERVAL_MS)},{WIDTH},{fulldata[i][j][1]*SCALE_FACTOR},{WIDTH},{fulldata[i][j+1][1]*SCALE_FACTOR}\n''')
             #if transition: f.write(f'''MY,0,{fulldata[i][j][0]},{fulldata[i][j][0]+math.ceil(ANALYSIS_INTERVAL_MS)},{BASE_Y+(6*fulldata[i][j][1]*SCALE_FACTOR)},{BASE_Y+(6*fulldata[i][j+1][1]*SCALE_FACTOR)}\n''')
