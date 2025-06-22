@@ -97603,10 +97603,10 @@ Sprite,Foreground,Centre,"sb\pixel.png",320,240
  C,0,294445,294745,0,0,255
  F,0,314239,314539,1,0
  C,0,314239,314539,255,0,0
-Animation,Foreground,Centre,"sb\q\silence.jpg",320,240,2,8,LoopForever
+Animation,Foreground,Centre,"sb\q\silence.jpg",320,240,3,200,LoopForever
  F,0,12403,,0.6
  S,0,12403,14851,0.2978285
-Animation,Foreground,Centre,"sb\q\sound.jpg",320,240,2,8,LoopForever
+Animation,Foreground,Centre,"sb\q\sound.jpg",320,240,4,200,LoopForever
  F,0,17333,,0.6
  S,0,17333,,0.2978285
  F,0,19711,21662,0.6,0
